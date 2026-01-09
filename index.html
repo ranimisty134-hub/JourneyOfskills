@@ -8,7 +8,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Book Reviews</title>
+<title>Contact Me</title>
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -20,25 +20,37 @@
 
 <div class="container my-5">
 
-<h2>Book Reviews</h2>
+<h2>Contact Me</h2>
 
-<div class="card mb-3">
+<form action="mailto:youremail@example.com" method="post" enctype="text/plain">
 
-<img src="images/book-cover.jpg" class="card-img-top" alt="">
+<div class="mb-3">
 
-<div class="card-body">
+<label>Name</label>
 
-<h5 class="card-title">Atomic Habits</h5>
-
-<p>Author: James Clear</p>
-
-<p>Rating: ⭐⭐⭐⭐⭐</p>
-
-<p>Lesson: Small habits make big difference.</p>
+<input type="text" name="name" class="form-control" required>
 
 </div>
 
+<div class="mb-3">
+
+<label>Email</label>
+
+<input type="email" name="email" class="form-control" required>
+
 </div>
+
+<div class="mb-3">
+
+<label>Message</label>
+
+<textarea name="message" rows="5" class="form-control" required></textarea>
+
+</div>
+
+<button class="btn btn-success">Send</button>
+
+</form>
 
 </div>
 
